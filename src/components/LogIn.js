@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class LogIn extends Component {
     constructor(props) {
@@ -14,9 +15,9 @@ class LogIn extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <div className="user-login-form">
                 <h1>User Login</h1>
-                <form onSubmit={this.handleSubmit} className="user-form">
+                <form onSubmit={this.handleSubmit} className="form-wrap">
                     <div className="input-box">
                         <label htmlFor="username">Username: </label>
                         <input type="text" id="username" />
@@ -27,7 +28,8 @@ class LogIn extends Component {
                     </div>
                     <input type="submit" value="Submit" />
                 </form>
-            </React.Fragment>
+                <p>New User? <Link to='/register'>Register</Link></p>
+            </div>
         )
     }
 }
