@@ -18,11 +18,11 @@ class LogIn extends Component {
                 <h1>User Login</h1>
                 <form onSubmit={this.handleSubmit} className="user-form">
                     <div className="input-box">
-                        <label htmlFor="username">Username:</label>
+                        <label htmlFor="username">Username: </label>
                         <input type="text" id="username" />
                     </div>
                     <div className="input-box">
-                        <label htmlFor="password">Password:</label>
+                        <label htmlFor="password">Password: </label>
                         <input type="text" id="password" />
                     </div>
                     <input type="submit" value="Submit" />
