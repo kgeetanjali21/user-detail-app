@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "name": "Geetanjali",
+            "phone": "9821412142",
+            "email": "geetakorgaonkar93@gmail.com",
+            "username": "geet",
+            "password": "Geetanjali@21"
+        },
+        {
+            "name": "Sebastian",
+            "phone": "9821743588",
+            "email": "sebastian@codingthesmartway.com",
+            "username": "Ann",
+            "password": "ann123"
+        }
+    ]
+}
