@@ -1,0 +1,32 @@
+.register-form {
+    width: 30%;
+
+    .page-name {
+        text-align: center;
+    }
+
+    .errormsg {
+        color: #f00;
+        display: block;
+    }
+
+    .input-box {
+        padding: 10px 0;
+
+        label {
+            width: 30%;
+            display: inline-block;
+        }
+
+        input {
+            width: 40%;
+            display: inline-block;
+            padding: 5px 10px;
+            vertical-align: middle;
+
+            .submit-user {
+
+            }
+        }
+    }
+}
