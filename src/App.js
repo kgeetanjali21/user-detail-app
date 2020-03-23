@@ -4,6 +4,7 @@ import ErrorPage from './components/ErrorPage';
 import './assets/styles/index.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Register from './components/Register';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={LogIn} />
           <Route path='/register' exact component={Register} />
+          <Route path='/home' exact component={Home} />
           <Route component={ErrorPage} />
         </Switch>
       </div>

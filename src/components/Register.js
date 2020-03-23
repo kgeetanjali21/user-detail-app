@@ -31,7 +31,7 @@ class Register extends Component {
     }
 
     componentDidMount() {
-        axios.get(`https://my-json-server.typicode.com/kgeetanjali21/user-detail-app/users`).then(res => {
+        axios.get(`http://localhost:3001/users`).then(res => {
             this.setState({
                 dataLength: res.data.length + 1,
                 usrData: res.data
@@ -211,7 +211,7 @@ class Register extends Component {
         } = this.state;
 
         if(!error) {
-            axios.post(`https://my-json-server.typicode.com/kgeetanjali21/user-detail-app/users`, {
+            axios.post(`http://localhost:3001/users`, {
                 name,
                 phone,
                 email,
@@ -225,7 +225,7 @@ class Register extends Component {
     handleSubmit(e) {
         e.preventDefault();
 
-        axios.get(`https://my-json-server.typicode.com/kgeetanjali21/user-detail-app/users`).then(res => {
+        axios.get(`http://localhost:3001/users`).then(res => {
             this.setState({
                 dataLength: res.data.length + 1,
                 usrData: res.data
